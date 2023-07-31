@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>     </title>
+<?php
+$s="localhost";
+$u="root";
+$p="";
+$d="form";
+$c= new mysqli($s,$u,$p,$d);
+?>
+</head>
+<body>
+    <form name= "signup" method="post" action="Form.php">
+<h1><b>Registation Form </b></h1>
+<table>
+    <tr>
+   <td> First Name:</td><td> <input type="textbox" name="fn" max="10"></td><br><br>
+        </tr>
+        <tr><td>Last Name:</td>  <td><input type="textbox" name="la"></td></tr>
+        <tr>
+   <td> User Name:</td><td> <input type="textbox" name="un" max="10"></td><br><br>
+        </tr>
+        <tr><td>Password:</td>  <td><input type="password" name="password"></td></tr>
+        <tr>
+            <td>Gentder</td>
+            <td><input type="radio" name="na" class="Male" Vallue="Male">Male</td>
+            <tr>
+            <td></td><td><input type="radio" name="na" class="Female" vallue="female">Female</td></td>
+            </tr>  
+    <tr>
+    <td>Academic Year</td><br>
+        <td><select>
+            <option  valule="s">1st Year</option>
+            <option value="a">2nd Year</option>
+            <option value="h">3rd Year</option>
+            <option value="dp">4th Year</option>
+            </select></td>
+    
+    </tr>
+        <tr>
+   <td>Email:</td><td> <input type="textbox" name="email" max="10"></td><br><br>
+        </tr>
+        <tr><td>Phone Number:</td>  <td><input type="integer" name="la"></td></tr>
+        <br><br>
+        <tr colspan=2><td><input type="submit" name="lo" value="Submit"></td></tr>
+        
+   
+    </table>
+
+    </form>
+    
+</body>
+</html>
